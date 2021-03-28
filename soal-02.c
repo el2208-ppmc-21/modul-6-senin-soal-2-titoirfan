@@ -55,7 +55,11 @@ void printList(node *head)
 	else { 
 		while (current!=NULL)
 		{
-			printf("%s ", current->name);
+			if (current->next != NULL)
+				printf("%s ", current->name);
+			else
+				printf("%s", current->name);
+			
 			current = current->next;
 		}
 	}
