@@ -84,10 +84,10 @@ int main() {
     teman2 = create(i);
 
     printf("\n");
-    printf("Teman baik %s: \n", stud1);
+    printf("Teman baik %s:\n", stud1);
     printList(teman1);
     printf("\n\n");
-    printf("Teman baik %s: \n", stud2);
+    printf("Teman baik %s:\n", stud2);
     printList(teman2);
     printf("\n\n");
 
@@ -96,7 +96,7 @@ int main() {
         if (search(teman1, temp->name)==1) {
             printf("%s dan %s sama-sama berteman dengan : %s\n", stud1, stud2, temp->name);
             index1 = index_search(teman1, temp->name);
-            printf("Ditemukan di indeks kedekatan : %d dari teman baik %s dan %d dari teman baik %s \n", index1, stud1, temp->index, stud2);
+            printf("Ditemukan di indeks kedekatan : %d dari teman baik %s dan %d dari teman baik %s\n", index1, stud1, temp->index, stud2);
             printf("\n");
             sum = sum+1;
             temp = temp->next;
