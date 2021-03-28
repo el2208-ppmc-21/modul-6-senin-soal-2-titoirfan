@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "01",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Amir\r\nEyen\r\nMikisa\r\nJen\r\n-\r\nArmina\r\nJen\r\nMikeos\r\nErena\r\n-",
+      "output": "Teman baik Amir:\r\nEyen Mikisa Jen\r\n\r\nTeman baik Armina:\r\nJen Mikeos Erena\r\n\r\nAmir dan Armina sama-sama berteman dengan : Jen\r\nDitemukan di indeks kedekatan : 3 dari teman baik Amir dan 1 dari teman baik Armina",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "02",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Amir\r\nEyen\r\nMikisa\r\nJena\r\n-\r\nArmina\r\nMikisa\r\nJono\r\nEyen\r\nSasa\r\n-",
+      "output": "Teman baik Amir:\r\nEyen Mikisa Jena\r\n\r\nTeman baik Armina:\r\nMikisa Jono Eyen Sasa\r\n\r\nAmir dan Armina sama-sama berteman dengan : Mikisa\r\nDitemukan di indeks kedekatan : 2 dari teman baik Amir dan 1 dari teman baik Armina\r\n\r\nAmir dan Armina sama-sama berteman dengan : Eyen\r\nDitemukan di indeks kedekatan : 1 dari teman baik Amir dan 3 dari teman baik Armina",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "03",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Eduin\r\nLevoy\r\nRicard\r\n-\r\nKrista\r\nYasmir\r\n-",
+      "output": "Teman baik Eduin:\r\nLevoy Ricard\r\n\r\nTeman baik Krista:\r\nYasmir\r\n\r\nTidak ditemukan teman baik yang sama",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "04",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Gabby\r\n-\r\nLevina\r\nEyena\r\nMikisa\r\n-",
+      "output": "Teman baik Gabby:\r\nTidak memiliki teman baik\r\n\r\nTeman baik Levina:\r\nEyena Mikisa\r\n\r\nTidak ditemukan teman baik yang sama",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "05",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Gabby\r\n-\r\nDeva\r\n-",
+      "output": "Teman baik Gabby:\r\nTidak memiliki teman baik\r\n\r\nTeman baik Deva:\r\nTidak memiliki teman baik\r\n\r\nTidak ditemukan teman baik yang sama",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "06",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Levina\r\nMikisa\r\nEyen\r\n-\r\nDeva\r\n-",
+      "output": "Teman baik Levina:\r\nMikisa Eyen\r\n\r\nTeman baik Deva:\r\nTidak memiliki teman baik\r\n\r\nTidak ditemukan teman baik yang sama",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "07",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Levina\r\nMikisa\r\nEyen\r\nAmir\r\n-\r\nLevana\r\nAmir\r\nMikisa\r\nEyen\r\n-",
+      "output": "Teman baik Levina:\r\nMikisa Eyen Amir\r\n\r\nTeman baik Levana:\r\nAmir Mikisa Eyen\r\n\r\nLevina dan Levana sama-sama berteman dengan : Amir\r\nDitemukan di indeks kedekatan : 3 dari teman baik Levina dan 1 dari teman baik Levana\r\n\r\nLevina dan Levana sama-sama berteman dengan : Mikisa\r\nDitemukan di indeks kedekatan : 1 dari teman baik Levina dan 2 dari teman baik Levana\r\n\r\nLevina dan Levana sama-sama berteman dengan : Eyen\r\nDitemukan di indeks kedekatan : 2 dari teman baik Levina dan 3 dari teman baik Levana",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "08",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Devin\r\nEyen\r\nMaria\r\nRose\r\n-\r\nDeva\r\nEyen\r\nMaria \r\n-",
+      "output": "Teman baik Devin:\r\nEyen Maria Rose\r\n\r\nTeman baik Deva:\r\nEyen Maria\r\n\r\nDevin dan Deva sama-sama berteman dengan : Eyen\r\nDitemukan di indeks kedekatan : 1 dari teman baik Devin dan 1 dari teman baik Deva\r\n\r\nDevin dan Deva sama-sama berteman dengan : Maria\r\nDitemukan di indeks kedekatan : 2 dari teman baik Devin dan 2 dari teman baik Deva",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "09",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Devi\r\nEyen\r\nEyen\r\nRose\r\n-\r\nDeva\r\nRose\r\nSino\r\n-",
+      "output": "Teman baik Devi:\r\nEyen Eyen Rose\r\n\r\nTeman baik Deva:\r\nRose Sino\r\n\r\nDevi dan Deva sama-sama berteman dengan : Rose\r\nDitemukan di indeks kedekatan : 3 dari teman baik Devi dan 1 dari teman baik Deva",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./soal-02",
+      "input": "Levina\r\nAmir\r\nMisaka\r\nEyen\r\nSasa\r\n-\r\nDevina\r\nAni\r\nSasa\r\nAmir\r\nFebri\r\n-",
+      "output": "Teman baik Levina:\r\nAmir Misaka Eyen Sasa\r\n\r\nTeman baik Devina:\r\nAni Sasa Amir Febri\r\n\r\nLevina dan Devina sama-sama berteman dengan : Sasa\r\nDitemukan di indeks kedekatan : 4 dari teman baik Levina dan 2 dari teman baik Devina\r\n\r\nLevina dan Devina sama-sama berteman dengan : Amir\r\nDitemukan di indeks kedekatan : 1 dari teman baik Levina dan 3 dari teman baik Devina",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
